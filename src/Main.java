@@ -1,7 +1,8 @@
-import com.diary.Diary;
+import com.login.Login;
+
 public class Main {
     public static void main(String[] args) {
 
-        Diary diary = new Diary();
+        Login login = new Login();
     }
 }

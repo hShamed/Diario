@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.diary.Diary">
-  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="panel1" layout-manager="GridLayoutManager" row-count="5" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="622" height="400"/>
+      <xy x="20" y="20" width="800" height="500"/>
     </constraints>
     <properties>
       <background color="-13158601"/>
       <foreground color="-13158601"/>
+      <maximumSize width="800" height="500"/>
+      <minimumSize width="800" height="500"/>
+      <preferredSize width="800" height="500"/>
     </properties>
     <border type="none"/>
     <children>
-      <grid id="88ddd" layout-manager="GridLayoutManager" row-count="6" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="ad244" layout-manager="GridLayoutManager" row-count="7" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
-          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="700" height="400"/>
+            <preferred-size width="700" height="400"/>
+            <maximum-size width="700" height="400"/>
+          </grid>
         </constraints>
         <properties>
           <background color="-13158601"/>
@@ -22,199 +29,170 @@
         </properties>
         <border type="none"/>
         <children>
-          <component id="d1ac0" class="javax.swing.JLabel" binding="loginLabel">
+          <component id="530f2" class="javax.swing.JTable" binding="table1" default-binding="true">
             <constraints>
-              <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <font name="JetBrains Mono" size="24" style="1"/>
-              <foreground color="-141259"/>
-              <text value="Iniciar Sesión"/>
-            </properties>
-          </component>
-          <grid id="4bb7b" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-            <margin top="0" left="0" bottom="0" right="0"/>
-            <constraints>
-              <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <background color="-13158601"/>
-              <foreground color="-13158601"/>
-            </properties>
-            <border type="none"/>
-            <children>
-              <component id="10dff" class="javax.swing.JLabel" binding="userLabel">
-                <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <background color="-4473925"/>
-                  <font name="JetBrains Mono" size="16" style="0"/>
-                  <foreground color="-1"/>
-                  <text value="Usuario"/>
-                </properties>
-              </component>
-              <component id="d2dfa" class="javax.swing.JLabel" binding="passwordLabel">
-                <constraints>
-                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <background color="-4473925"/>
-                  <font name="JetBrains Mono" size="16" style="0"/>
-                  <foreground color="-1"/>
-                  <text value="Contraseña"/>
-                </properties>
-              </component>
-              <component id="f1a49" class="javax.swing.JTextField" binding="userTxtF">
-                <constraints>
-                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                    <minimum-size width="300" height="30"/>
-                    <preferred-size width="300" height="30"/>
-                    <maximum-size width="300" height="30"/>
-                  </grid>
-                </constraints>
-                <properties>
-                  <background color="-12828863"/>
-                  <caretColor color="-1"/>
-                  <font name="JetBrains Mono" size="14" style="0"/>
-                  <foreground color="-141259"/>
-                </properties>
-              </component>
-              <component id="aa63e" class="javax.swing.JPasswordField" binding="passwordTxtF">
-                <constraints>
-                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                    <minimum-size width="300" height="30"/>
-                    <preferred-size width="300" height="30"/>
-                    <maximum-size width="300" height="30"/>
-                  </grid>
-                </constraints>
-                <properties>
-                  <background color="-12828863"/>
-                  <caretColor color="-1"/>
-                  <font name="JetBrains Mono" size="14" style="0"/>
-                  <foreground color="-141259"/>
-                </properties>
-              </component>
-            </children>
-          </grid>
-          <component id="15e4a" class="javax.swing.JButton" binding="loginBtn">
-            <constraints>
-              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
-                <minimum-size width="150" height="30"/>
-                <preferred-size width="150" height="30"/>
-                <maximum-size width="150" height="30"/>
+              <grid row="6" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
               </grid>
             </constraints>
             <properties>
-              <background color="-141259"/>
-              <font name="JetBrains Mono" size="16" style="1"/>
-              <foreground color="-13158601"/>
-              <text value="Iniciar sesión"/>
+              <background color="-11974327"/>
             </properties>
           </component>
-          <component id="f316c" class="javax.swing.JButton" binding="registerBtn">
+          <component id="f2ce" class="javax.swing.JTextArea" binding="noteTxtArea">
             <constraints>
-              <grid row="5" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
-                <minimum-size width="100" height="25"/>
-                <preferred-size width="100" height="25"/>
-                <maximum-size width="100" height="25"/>
+              <grid row="3" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="650" height="200"/>
+                <preferred-size width="650" height="200"/>
+                <maximum-size width="650" height="200"/>
               </grid>
             </constraints>
             <properties>
+              <autoscrolls value="true"/>
               <background color="-9803158"/>
+              <caretColor color="-1"/>
+              <focusable value="true"/>
+              <font name="JetBrains Mono" size="14" style="0"/>
               <foreground color="-1"/>
-              <text value="Registrarse"/>
+              <lineWrap value="true"/>
+              <margin top="2" left="2" bottom="2" right="2"/>
             </properties>
           </component>
-          <vspacer id="7932e">
+          <vspacer id="57834">
             <constraints>
-              <grid row="3" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
-                <minimum-size width="20" height="20"/>
-                <preferred-size width="20" height="20"/>
-                <maximum-size width="20" height="20"/>
-              </grid>
+              <grid row="5" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
             </constraints>
           </vspacer>
-          <component id="12bde" class="javax.swing.JLabel" binding="msgLabel">
+          <component id="227f8" class="javax.swing.JLabel" binding="noteLabel">
             <constraints>
-              <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <foreground color="-1747884"/>
-              <requestFocusEnabled value="true"/>
-              <text value=""/>
+              <enabled value="true"/>
+              <font name="JetBrains Mono" size="14" style="0"/>
+              <foreground color="-1"/>
+              <text value="Escribe una entrada para tu diario:"/>
             </properties>
           </component>
-          <component id="fb8e" class="javax.swing.JButton" binding="register2Btn">
+          <component id="fa24a" class="javax.swing.JButton" binding="noteBtn">
             <constraints>
-              <grid row="4" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
-                <minimum-size width="150" height="30"/>
-                <preferred-size width="150" height="30"/>
-                <maximum-size width="150" height="30"/>
-              </grid>
+              <grid row="4" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <background color="-141259"/>
-              <enabled value="false"/>
               <font name="JetBrains Mono" size="16" style="1"/>
-              <foreground color="-13158601"/>
-              <text value="Registrar"/>
-              <visible value="false"/>
+              <foreground color="-1"/>
+              <text value="Añadir"/>
             </properties>
           </component>
-          <component id="1c9cd" class="javax.swing.JButton" binding="backBtn">
+          <component id="d9180" class="javax.swing.JLabel" binding="searchLabel">
             <constraints>
-              <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
-                <minimum-size width="100" height="25"/>
-                <preferred-size width="100" height="25"/>
-                <maximum-size width="100" height="25"/>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="JetBrains Mono" size="14" style="0"/>
+              <foreground color="-1"/>
+              <text value="Búsqueda"/>
+            </properties>
+          </component>
+          <component id="b149e" class="javax.swing.JTextField" binding="searchTxt">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <minimum-size width="500" height="30"/>
+                <preferred-size width="500" height="30"/>
+                <maximum-size width="500" height="30"/>
               </grid>
             </constraints>
             <properties>
               <background color="-9803158"/>
-              <enabled value="false"/>
+              <caretColor color="-1"/>
               <foreground color="-1"/>
-              <opaque value="true"/>
-              <text value="Volver"/>
-              <visible value="false"/>
+              <margin top="3" left="8" bottom="3" right="8"/>
             </properties>
           </component>
+          <component id="aa0c4" class="javax.swing.JButton" binding="searchBtn">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-141259"/>
+              <font name="JetBrains Mono" size="16" style="1"/>
+              <foreground color="-1"/>
+              <text value="Buscar"/>
+            </properties>
+          </component>
+          <vspacer id="2aef4">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
         </children>
       </grid>
-      <hspacer id="efc58">
+      <vspacer id="d2755">
         <constraints>
-          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
-            <minimum-size width="20" height="20"/>
-            <preferred-size width="20" height="20"/>
-            <maximum-size width="20" height="20"/>
+          <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <minimum-size width="10" height="10"/>
+            <preferred-size width="10" height="10"/>
+            <maximum-size width="10" height="10"/>
           </grid>
         </constraints>
-      </hspacer>
-      <hspacer id="ce10c">
+      </vspacer>
+      <vspacer id="836fd">
         <constraints>
-          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
-            <minimum-size width="20" height="20"/>
-            <preferred-size width="20" height="20"/>
-            <maximum-size width="20" height="20"/>
-          </grid>
-        </constraints>
-      </hspacer>
-      <vspacer id="7ba19">
-        <constraints>
-          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+          <grid row="4" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
             <minimum-size width="20" height="20"/>
             <preferred-size width="20" height="20"/>
             <maximum-size width="20" height="20"/>
           </grid>
         </constraints>
       </vspacer>
-      <vspacer id="dc47c">
+      <hspacer id="5f0c8">
         <constraints>
-          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
             <minimum-size width="20" height="20"/>
             <preferred-size width="20" height="20"/>
             <maximum-size width="20" height="20"/>
           </grid>
+        </constraints>
+      </hspacer>
+      <hspacer id="13ed8">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="20" height="20"/>
+            <preferred-size width="20" height="20"/>
+            <maximum-size width="20" height="20"/>
+          </grid>
+        </constraints>
+      </hspacer>
+      <component id="7ed17" class="javax.swing.JLabel" binding="titleLabel">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="C059" size="24" style="3"/>
+          <foreground color="-141259"/>
+          <text value="Mi Diario"/>
+        </properties>
+      </component>
+      <component id="ccdd7" class="javax.swing.JButton" binding="exitBtn">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="80" height="30"/>
+            <preferred-size width="80" height="30"/>
+            <maximum-size width="80" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-1747884"/>
+          <focusable value="false"/>
+          <foreground color="-1"/>
+          <label value="Salir"/>
+          <text value="Salir"/>
+        </properties>
+      </component>
+      <vspacer id="82f8e">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
         </constraints>
       </vspacer>
     </children>

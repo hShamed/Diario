@@ -1,23 +1,18 @@
 package com.diary;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
-public class Diary extends JFrame {
+public class Diary extends JFrame{
     private JPanel panel1;
-    private JTextField userTxtF;
-    private JPasswordField passwordTxtF;
-    private JButton loginBtn;
-    private JButton registerBtn;
-    private JLabel passwordLabel;
-    private JLabel userLabel;
-    private JLabel loginLabel;
-    private JLabel msgLabel;
-    private JButton backBtn;
-    private JButton register2Btn;
-    private String userName;
-    private String password;
+    private JTable table1;
+    private JTextArea noteTxtArea;
+    private JButton noteBtn;
+    private JTextField searchTxt;
+    private JButton searchBtn;
+    private JLabel titleLabel;
+    private JLabel searchLabel;
+    private JLabel noteLabel;
+    private JButton exitBtn;
 
     public Diary() {
         // Put the main panel of the interface
@@ -30,7 +25,7 @@ public class Diary extends JFrame {
         setTitle("Mi diario");
 
         // Adjust size
-        setSize(500, 400);
+        setSize(800, 500);
 
         // Locks size
         setResizable(false);
@@ -40,90 +35,5 @@ public class Diary extends JFrame {
 
         // Show the window
         setVisible(true);
-
-        loginBtn.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if (userName != null && password != null) {
-                    if (userTxtF.getText().equals(userName) && passwordTxtF.getText().equals(password)) {
-                        msgLabel.setText("Los datos ingresados son correctos");
-                    } else {
-                        userTxtF.setText("");
-                        passwordTxtF.setText("");
-                        msgLabel.setText("Los datos ingresados no son correctos");
-                    }
-                } else {
-                    userTxtF.setText("");
-                    passwordTxtF.setText("");
-                    msgLabel.setText("Los datos ingresados no coinciden con ningún usuario");
-                }
-            }
-        });
-
-        registerBtn.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                loginLabel.setText("Registro");
-                msgLabel.setText("");
-                userTxtF.setText("");
-                passwordTxtF.setText("");
-                loginBtn.setVisible(false);
-                loginBtn.setEnabled(false);
-                registerBtn.setVisible(false);
-                registerBtn.setEnabled(false);
-                register2Btn.setVisible(true);
-                register2Btn.setEnabled(true);
-                backBtn.setVisible(true);
-                backBtn.setEnabled(true);
-            }
-        });
-
-        register2Btn.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if (userTxtF.getText().equals("") || passwordTxtF.getText().equals("")) {
-                    msgLabel.setText("Hacen falta de llenar campos");
-                } else {
-                    setUserName(userTxtF.getText());
-                    setPassword(passwordTxtF.getText());
-
-                    backBtn.doClick();
-                }
-            }
-        });
-
-        backBtn.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                loginLabel.setText("Iniciar Sesión");
-                msgLabel.setText("");
-                userTxtF.setText("");
-                passwordTxtF.setText("");
-                loginBtn.setVisible(true);
-                loginBtn.setEnabled(true);
-                registerBtn.setVisible(true);
-                registerBtn.setEnabled(true);
-                register2Btn.setVisible(false);
-                register2Btn.setEnabled(false);
-                backBtn.setVisible(false);
-                backBtn.setEnabled(false);
-            }
-        });
-    }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
     }
 }
