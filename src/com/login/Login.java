@@ -53,6 +53,7 @@ public class Login extends JFrame {
                         Diary diary = new Diary();
 
                         panel1.setVisible(false);
+                        dispose();
                     } else {
                         userTxtF.setText("");
                         passwordTxtF.setText("");

@@ -1,6 +1,13 @@
 package com.diary;
 
 import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.time.LocalDateTime;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Objects;
 
 public class Diary extends JFrame{
     private JPanel panel1;
@@ -9,7 +16,6 @@ public class Diary extends JFrame{
     private JButton noteBtn;
     private JTextField searchTxt;
     private JButton searchBtn;
-    private JLabel titleLabel;
     private JLabel searchLabel;
     private JLabel noteLabel;
     private JButton exitBtn;
@@ -35,5 +41,25 @@ public class Diary extends JFrame{
 
         // Show the window
         setVisible(true);
+
+        noteBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                DefaultTableModel model = new DefaultTableModel(1, 0);
+
+                model.addRow(new Object[]{noteTxtArea.getText()});
+
+                table1.setModel(model);
+            }
+        });
+
+        exitBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                setVisible(false);
+                dispose();
+            }
+        });
     }
 }
